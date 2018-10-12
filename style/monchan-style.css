@@ -1,0 +1,111 @@
+:root{
+    --primary-color: grey;
+    --secondary-color: grey;
+    --primary-font: 'Alex Brush', cursive !important;
+    --secondary-font:'Slabo 27px', serif !important;
+    --font-size-mobile : 3em;
+    --font-size-laptopn : 2em;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-height{
+    height: 100vh;
+    position: relative;
+}
+/*Font*/
+h2,h1,.logo,.nav-link{
+    font-family: var(--primary-font);
+}
+p{
+    font-family: var(--secondary-font);
+}
+
+/*layout flex-out*/
+.flex-container-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex-row-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*menu  class*/
+
+
+.active{
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px #E3E3E3;
+    z-index: 2;
+    height: 100vh;
+}
+.main-menu{
+    display: none;
+    list-style: none;
+    font-family: var(--primary-font);
+}
+.nav-link{
+    font-family: var(--primary-font);
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-size-mobile);
+}
+.nav-link:hover{
+    color: gold;
+}
+.navbar-toggle{
+    font-size: var(--font-size-mobile);
+    cursor: pointer;
+    transition: 0.8s;
+}
+.navbar-toggle:hover{
+    opacity: 0.3;
+}
+/*Header*/
+.header{
+}
+.logo{
+    font-size: var(--font-size-mobile);
+    text-decoration: none;
+    color: black;
+
+}
+/*FOOTER*/
+.footer{
+    background-color: var(--secondary-color);
+}
+@media only screen and (min-width: 961px) {
+    /*HEADER*/
+    .navbar-toggle{
+        display: none;
+    }
+    /*menu*/
+    .main-menu{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .nav-link{
+        font-size: var(--font-size-laptopn) ;
+    }
+}

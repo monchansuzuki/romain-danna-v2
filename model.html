@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Romain Danna|</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="style/model.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style/normalize.css" type="text/css">
+    <link href="style/monchan-style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body class="full-height flex-container-body">
+<!--HEADER-->
+<header class="header">
+    <div class="flex-row-container">
+
+        <a href="#" class="logo">Romain Danna</a>
+
+        <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    </div>
+
+    <nav class="main-menu" id="js-menu">
+        <li><a href="model.html" class="nav-link">I am a model</a></li>
+        <li><a href="actor.html" class="nav-link">I am an Actor</a></li>
+        <li><a href="music.html" class="nav-link">I compose music</a></li>
+        <li><a href="about.html" class="nav-link">About me</a></li>
+        <li><a href="contact.html" class="nav-link">Contact me</a></li>
+    </nav>
+</header>
+
+<!--MAIN-->
+<main>
+    <aside class="aside-menu">
+        <button class="btn" id="cat-btn">Catalogue</button>
+        <button class="btn" id="mag-btn">Magazine</button>
+        <button class="btn" id="prom-btn">Promotion</button>
+    </aside>
+
+    <section>
+
+
+
+        <div class="flex-container-col" id="container">
+            <form class="select-cat">
+                <select class="select" name="cat" id="cat">
+                    <option value="">Selected a categorie</option>
+                    <option value="Catalogue">Catalogue</option>
+                    <option value="Magazine">Magazine</option>
+                    <option value="Promotion">Promotion</option>
+                </select>
+            </form>
+            <h1 id="categorie"> Select a category</h1>
+            <div class="img-container" id="mag-img-container">
+
+            </div>
+        </div>
+
+    </section>
+    <div class="vide"></div>
+
+
+</main>
+
+
+<!--FOOTER-->
+<footer class="flex-row-container footer">
+    <a><img src="img/fb-logo.png" class="social-img"></a>
+    <a><img src="img/insta-logo.png" class="social-img"></a>
+    <a><img src="img/soundcloud-logo.png" class="social-img"></a>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/imageLoad.js"></script>
+
+</body>
+</html>

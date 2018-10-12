@@ -1,0 +1,41 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url(../img/home3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #00000040;
+    -webkit-box-shadow: 3px 7px 4px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 7px 4px -6px rgba(0,0,0,0.75);
+    box-shadow: 3px 7px 4px -6px rgba(0,0,0,0.75);
+    justify-content: flex-end;
+}
+.msg-banner{
+    background-color: #6c6c6c;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 1vh 16vw;
+    color: white;
+}
+
+@media only screen and (min-width: 961px) {
+    .banner {
+        height: 76vh;
+        background-image: url(../img/home2.png);
+        background-repeat: no-repeat;
+        background-position: 10%;
+        border: 1px solid #00000040;
+        padding-left: 54%;
+        align-items: center;
+        justify-content: center;
+    }
+    .msg-banner{
+        width: 34vw;
+        padding: 1%;
+        line-height: 1.6;
+        font-size: 1.6em;
+    }
+}
